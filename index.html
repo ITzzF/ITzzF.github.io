@@ -27,10 +27,11 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">洛阳</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">NDVI</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+								<li><a href="#features" id="top-link"><span class="icon solid fa-home">首页</span></a></li>
+								<li><a href="pages/viewer.html"><span class="icon solid fa-th">影像查看</span></a></li>
+								<li><a href="pages/indices.html"><span class="icon solid fa-user">各个指数</span></a></li>
+								<li><a href="pages/border.html"><span class="icon solid fa-draw-polygon">边框</span></a></li>
+								<li><a href="pages/llm.html"><span class="icon solid fa-robot">大模型</span></a></li>
 							</ul>
 						</nav>
 
@@ -54,82 +55,45 @@
 		<!-- Main -->
 			<div id="main">
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
 
+
+				<!-- Features (四卡片入口) -->
+					<section id="features" class="two">
+						<div class="container">
 							<header>
-								<h2 class="alt">你好！我是<strong>张智帆</strong>, 欢迎来到我的网站！
-									<!-- <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>. -->
-								</h2>
-								<p>
-									有志者事竟成！
-									<!-- Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum. -->
-								</p>
+								<h2>功能入口</h2>
+								<p>请选择要进入的系统模块</p>
 							</header>
 
-							<footer>
-								<a href="#portfolio" class="button scrolly">点击</a>
-							</footer>
+							<div class="feature-grid">
+								<article class="feature-card">
+									<div class="feature-icon"><span class="icon solid fa-th"></span></div>
+									<h3>影像查看</h3>
+									<p>浏览遥感影像与边框叠加效果。</p>
+									<a class="button primary feature-cta-in" href="pages/viewer.html">进入系统</a>
+								</article>
 
-						</div>
-					</section>
+								<article class="feature-card">
+									<div class="feature-icon"><span class="icon solid fa-chart-area"></span></div>
+									<h3>各个指数</h3>
+									<p>快速查看 NDVI 等常用指数。</p>
+									<a class="button primary feature-cta-in" href="pages/indices.html">进入系统</a>
+								</article>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+								<article class="feature-card">
+									<div class="feature-icon"><span class="icon solid fa-draw-polygon"></span></div>
+									<h3>边框</h3>
+									<p>展示并管理研究区边界。</p>
+									<a class="button primary feature-cta-in" href="pages/border.html">进入系统</a>
+								</article>
 
-							<header>
-								<h2>洛阳</h2>
-							</header>
-							<iframe src="https://ee-zzf.projects.earthengine.app/view/luoyang" 
-									width="100%" 
-									height="700px" 
-									frameborder="0"
-									allowfullscreen>
-							</iframe>
-
-						
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>NDVI</h2>
-							</header>
-
-							<iframe src="https://ee-zzf.projects.earthengine.app/view/app1" 
-									width="100%" 
-									height="700px" 
-									frameborder="0"
-									allowfullscreen>
-							</iframe>
-
-						
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>边框</h2>
-							</header>
-
-							<iframe src="https://ee-zzf.projects.earthengine.app/view/biankuang" 
-									width="100%" 
-									height="700px" 
-									frameborder="0"
-									allowfullscreen>
-							</iframe>
+								<article class="feature-card">
+									<div class="feature-icon"><span class="icon solid fa-robot"></span></div>
+									<h3>大模型</h3>
+									<p>与本地大模型对话（需要本地服务运行）。</p>
+									<a class="button primary feature-cta-in" href="pages/llm.html">进入系统</a>
+								</article>
+							</div>
 
 						</div>
 					</section>
